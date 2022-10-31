@@ -1,33 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | Stats preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main-container>
+    <picture>
+      <source id="desktop" media="(max-width: 700px)" srcset="./images/image-header-desktop.jpg">
+      <img id="mobile" src="./images/image-header-mobile.jpg" alt="">
+    </picture>
 
-  Get insights that help your business grow.
+    <div class="text">
+      <div class="text-title">
+      Get insights that help your business grow.
+      </div>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+      <div class="text-info">
+      Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+      experience, and overall efficiency.
+      </div>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+      <div class="scope">
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <b>10k+</b> companies
+        <b> 314</b>  templates 
+        <b> 12m+</b>  queries
+
+      </div>
+
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/luiis-fuenmayor/" target="_blank">Luis Alfredo</a>.
+    </div>
+  </main>
 </body>
 </html>
